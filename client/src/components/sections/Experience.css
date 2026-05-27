@@ -1,0 +1,75 @@
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.exp-card {
+  padding: 28px 32px;
+  background: var(--paper-white);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.exp-role {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.exp-company {
+  color: var(--muted-text);
+  font-size: 0.95rem;
+}
+
+.exp-dates {
+  font-family: var(--font-hand);
+  font-size: 0.95rem;
+  color: var(--muted-text);
+  white-space: nowrap;
+}
+
+.exp-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 16px;
+}
+
+.exp-bullets li {
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #222;
+}
+
+.exp-bullets li::before {
+  content: '';
+  position: absolute;
+  left: -16px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background: var(--accent-pink);
+  border-radius: 50%;
+  border: 1.5px solid var(--ink-black);
+}
+
+@media (max-width: 600px) {
+  .exp-card {
+    padding: 20px;
+  }
+
+  .exp-header {
+    flex-direction: column;
+  }
+}

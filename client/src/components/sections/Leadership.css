@@ -1,0 +1,68 @@
+.leadership-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  padding-left: 28px;
+  border-left: 2px dashed var(--border-ink);
+  margin-left: 8px;
+}
+
+.leadership-card {
+  position: relative;
+  padding: 0 0 32px 24px;
+}
+
+.leadership-dot {
+  position: absolute;
+  left: -36px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: var(--accent-yellow);
+  border: 2px solid var(--ink-black);
+  border-radius: 50%;
+}
+
+.leadership-content {
+  background: var(--paper-white);
+  border: 1.5px solid var(--border-ink);
+  border-radius: 8px;
+  padding: 18px 22px;
+  box-shadow: 3px 3px 0 var(--ink-black);
+}
+
+.leadership-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.leadership-role {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.leadership-dates {
+  font-family: var(--font-hand);
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  white-space: nowrap;
+}
+
+.leadership-org {
+  font-size: 0.875rem;
+  color: var(--muted-text);
+  font-weight: 500;
+}
+
+.leadership-detail {
+  font-size: 0.875rem;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 8px;
+}
